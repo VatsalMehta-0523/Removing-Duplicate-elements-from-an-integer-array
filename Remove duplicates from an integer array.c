@@ -27,8 +27,8 @@ int main(){
 
     printf("\nSorted array before removing duplicate values  : ");
     printArr(arr , n );
-    remove_dupplicates(arr , &n );
-    printf("\nupdated array after removing duplicate value   : ");
+    remove_dupplicates(arr , &n );                                    // function is called by reference
+    printf("\nupdated array after removing duplicate value   : ");    // so that size of array after removing duplicates should be altered.
     printArr(arr , n );
 
     return 0 ;
